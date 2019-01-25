@@ -1,32 +1,32 @@
 import React from "react";
-import "./BurgerIngredient.css";
+import styles from "./BurgerIngredient.css";
 
 const burgerIngredient = props => {
   let ingredient = null
 
   switch (props.type){
     case ('bread-bottom'):
-      ingredient = <div className="BreadBottom"></div>;
+      ingredient = <div className={styles.BreadBottom}></div>;
       break
     case ('bread-top'):
       ingredient = (
-        <div className="BreadTop">
-          <div className="Seeds1"></div>
-          <div className="Seeds2"></div>
+        <div className={styles.BreadTop}>
+          <div className={styles.Seeds1}></div>
+          <div className={styles.Seeds2}></div>
         </div>
       );
       break
     case ('meat'):
-      ingredient = <div className="Meat"></div>
+      ingredient = <div className={styles.Meat}></div>
       break
     case ('cheese'):
-      ingredient = <div className="Cheese"></div>
+      ingredient = <div className={styles.Cheese}></div>
       break
     case ('salad'):
-      ingredient = <div className="Salad"></div>
+      ingredient = <div className={styles.Salad}></div>
       break
     case ('becon'):
-      ingredient = <div className="Becon"></div>
+      ingredient = <div className={styles.Becon}></div>
       break
     default:
       ingredient = null
